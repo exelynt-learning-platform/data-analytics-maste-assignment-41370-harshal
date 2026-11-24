@@ -1,0 +1,6 @@
+# My Git Assignment
+I am learning:
+- Git initialization
+- Staging changes
+- Committing changes
+- Viewing commit history
