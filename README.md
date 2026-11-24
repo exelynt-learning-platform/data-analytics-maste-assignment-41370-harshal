@@ -1,2 +1,9 @@
-# data-analytics-maste-assignment-41370-harshal
-Module &amp; Week Assignments - This repository contains module-wise and week-wise assignment submissions.
+# My Git Assignment
+
+This repository is created to practise Git.
+
+I am learning:
+- Git initialization
+- Staging changes
+- Committing changes
+- Viewing commit history
