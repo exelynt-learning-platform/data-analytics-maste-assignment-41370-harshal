@@ -1,0 +1,42 @@
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Local environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Raw data: keep original, large, private, or licensed data out of Git
+/data/raw/
+
+# Common large/generated data and archive formats
+*.parquet
+*.feather
+*.h5
+*.hdf5
+*.zip
+*.7z
+
+# Temporary files, logs, and caches
+*.log
+*.tmp
+.cache/
+
+# Operating-system files
+.DS_Store
+Thumbs.db
+
+# Optional editor settings
+.vscode/
+.idea/
