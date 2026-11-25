@@ -1,4 +1,4 @@
-﻿# Working with Remote Git Repositories
+# Working with Remote Git Repositories
 
 ## 1. Git Push
 
