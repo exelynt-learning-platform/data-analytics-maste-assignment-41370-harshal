@@ -17,7 +17,7 @@ This project contains a sample sales dataset for practising data analysis.
 5. Highest Sales Region: West
 6. Highest Revenue Product: Laptop
 
-## Analysis Goals
+## Analysis Goals - Main Branch Review
 - Identify the best-performing region.
 - Compare sales across product categories.
 - Find the most profitable products.
@@ -28,3 +28,4 @@ This project contains a sample sales dataset for practising data analysis.
 - GitHub
 - Python
 - Pandas
+
