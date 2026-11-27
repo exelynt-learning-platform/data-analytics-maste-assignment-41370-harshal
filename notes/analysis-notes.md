@@ -1,9 +1,11 @@
 # Sales Data Analysis Notes
 
 ## Project Description
+
 This project contains a sample sales dataset for practising data analysis.
 
 ## Dataset Information
+
 - Total records: 10
 - Total columns: 9
 - File location: data/sales.csv
@@ -17,15 +19,24 @@ This project contains a sample sales dataset for practising data analysis.
 5. Highest Sales Region: West
 6. Highest Revenue Product: Laptop
 
-## Analysis Goals - Main Branch Review
+## Analysis Goals - Main and Monthly Review
+
 - Identify the best-performing region.
 - Compare sales across product categories.
 - Find the most profitable products.
 - Understand overall sales performance.
 
+## Monthly Sales Review
+
+- January Total Sales: 224700
+- January Total Profit: 36300
+- Highest Revenue Product: Laptop
+- Highest Revenue Region: West
+- Total Orders: 10
+
 ## Tools
+
 - Git
 - GitHub
 - Python
 - Pandas
-
