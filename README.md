@@ -50,3 +50,34 @@ Important columns:
 
 ## Author
 Data Analytics Learner
+
+## Branching and Merging
+
+Created a feature branch named feature/monthly-sales-analysis.
+
+Added monthly sales analysis on the feature branch.
+
+Modified the same analysis heading on the main branch to demonstrate a merge conflict.
+
+## Merge Conflict Explanation
+
+A merge conflict occurred because both main and feature branches modified the same heading in notes/analysis-notes.md.
+
+Git identified the conflicting changes using conflict markers.
+
+I resolved the conflict by combining the required information from both branches and removing all conflict markers.
+
+After resolving the conflict, I staged the file and successfully committed the merge.
+
+## Git Commit History
+
+```text
+*   18ca8c4 (HEAD -> main) merge: resolve conflict in sales analysis notes
+|\  
+| * 3137a0a (feature/monthly-sales-analysis) feat: add monthly sales analysis
+* | f87495e docs: update analysis goals on main branch
+|/  
+* 21dc932 docs: add project overview and setup instructions
+* d9221f3 chore: add gitignore for unnecessary files
+* 548c501 docs: add initial sales analysis notes
+* eac987d data: add sample sales dataset
