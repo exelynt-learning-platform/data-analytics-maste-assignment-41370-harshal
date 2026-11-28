@@ -22,18 +22,30 @@ Through this project, I am learning how to:
 
 The repository is organized to keep documentation easy to find.
 
-```text
+## Repository Structure
+
 git-assignment-course/
 │
-├── README.md
 ├── .gitignore
+├── README.md
+├── SETUP.md
+├── repo-basics.md
 │
-└── docs/
-    ├── commits.md
-    ├── github-setup.md
-    ├── learning-notes.md
-    └── push-practice.md
-```
+├── docs/
+│   ├── commits.md
+│   ├── github-setup.md
+│   ├── learning-notes.md
+│   ├── push-practice.md
+│   ├── remote-workflow.md
+│   └── tracking-changes.md
+│
+└── git-data-analysis-project/
+    ├── .gitignore
+    ├── README.md
+    ├── data/
+    │   └── sales.csv
+    └── notes/
+        └── analysis-notes.md
 
 ### File descriptions
 
@@ -97,7 +109,7 @@ For example, an issue in this project could be:
 
 **Issue title:** Improve GitHub documentation
 
-**Description:**  
+**Description:**
 The repository documentation needs improvement. The README should explain the project, GitHub Issues, Pull Requests, and Git best practices.
 
 ### How to create an Issue
@@ -183,3 +195,47 @@ Following good Git practices keeps a project safe, organized, and easy to mainta
 This project helps me understand how Git and GitHub are used in real development workflows. I have learned about version control, commits, remote repositories, and repository management.
 
 I am also learning how Issues and Pull Requests support collaboration and how Git best practices help maintain clean, secure, and organized data analytics projects.
+
+
+## 11. Using the Sales Data Analysis Project
+
+The repository includes a practical Sales Data Analysis project in the `git-data-analysis-project/` folder.
+
+### Project Files
+
+- `data/sales.csv` – Sample sales dataset.
+- `notes/analysis-notes.md` – Sales analysis notes and findings.
+- `README.md` – Project overview and setup information.
+- `.gitignore` – Files and folders excluded from Git tracking.
+
+### How to Use the Project
+
+1. Open the `git-data-analysis-project/` folder.
+2. Open `data/sales.csv` using Excel, Python, or another data analysis tool.
+3. Read `notes/analysis-notes.md` to understand the initial analysis.
+4. Practise calculating sales, profit, and other business KPIs.
+5. Create visualizations and dashboards using Power BI or Python.
+
+### Project Repository
+
+Personal GitHub repository:
+
+https://github.com/Harshal-78/git-data-analysis-project
+
+## 12. Git Commit History
+
+The following graph shows the actual commit history, including the feature branch and merge.
+
+```text
+* b738d39 (HEAD -> main, origin/main, origin/HEAD) docs: improve sales analysis project README
+* f8c4671 docs: document merge conflict and git history
+*   18ca8c4 merge: resolve conflict in sales analysis notes
+|\
+| * 3137a0a (origin/feature/monthly-sales-analysis, feature/monthly-sales-analysis) feat: add monthly sales analysis notes
+* | f87495e docs: update analysis goals on main branch
+|/
+* 21dc932 docs: add project overview and setup instructions
+* d9221f3 chore: add gitignore for unnecessary files
+* 548c501 docs: add initial sales analysis notes
+* eac987d data: add sample sales dataset
+```

@@ -1,31 +1,36 @@
 # Sales Data Analysis Project
 
-## Project Overview
+## 1. Project Overview
+
 This project demonstrates a basic sales data analysis workflow using Git and GitHub.
 
-It contains a sample sales dataset and analysis notes to understand sales performance, product performance, and regional performance.
+It contains a sample sales dataset and analysis notes for practising business analysis.
 
-## Project Objectives
+## 2. Project Objectives
+
 - Analyze total sales and profit.
-- Identify the highest-performing region.
 - Compare product categories.
-- Understand sales performance.
+- Identify regional sales performance.
+- Understand sales and quantity trends.
+- Practise Git and GitHub workflows.
 
-## Project Structure
+## 3. Repository Structure
+
 ```text
 git-data-analysis-project/
+├── .gitignore
+├── README.md
 ├── data/
 │   └── sales.csv
-├── notes/
-│   └── analysis-notes.md
-├── .gitignore
-└── README.md
+└── notes/
+    └── analysis-notes.md
 ```
 
-## Dataset Information
-The dataset contains 10 sales records and 9 columns.
+## 4. Dataset Information
 
-Important columns:
+The sample dataset contains 10 records and 9 columns.
+
+Columns:
 - OrderID
 - OrderDate
 - Region
@@ -36,48 +41,92 @@ Important columns:
 - Sales
 - Profit
 
-## Setup Instructions
-1. Clone this repository from GitHub.
-2. Open the project folder.
-3. Access sales.csv inside the data folder.
-4. Read analysis-notes.md inside the notes folder.
+Dataset location: `data/sales.csv`
 
-## Tools Used
+## 5. Setup Instructions
+
+### Requirements
+- Git
+- Microsoft Excel or Power BI (optional)
+- GitHub account
+
+### Clone the Personal Repository
+
+```powershell
+git clone https://github.com/Harshal-78/git-data-analysis-project.git
+cd git-data-analysis-project
+```
+
+Open `data/sales.csv` using Excel or Power BI.
+
+Read `notes/analysis-notes.md` to understand the initial analysis.
+
+No Python packages are required to open CSV and Markdown files.
+
+## 6. Tools Used
+
 - Git
 - GitHub
 - PowerShell
 - CSV
+- Excel / Power BI
 
-## Author
-Data Analytics Learner
+## 7. Branching and Merging
 
-## Branching and Merging
+Feature branch: `feature/monthly-sales-analysis`
 
-Created a feature branch named feature/monthly-sales-analysis.
+Main branch: `main`
 
-Added monthly sales analysis on the feature branch.
+Feature branch commit: `3137a0a`
 
-Modified the same analysis heading on the main branch to demonstrate a merge conflict.
+Main branch commit: `f87495e`
 
-## Merge Conflict Explanation
+Merge commit: `18ca8c4`
 
-A merge conflict occurred because both main and feature branches modified the same heading in notes/analysis-notes.md.
+The feature branch was merged into main.
 
-Git identified the conflicting changes using conflict markers.
+## 8. Merge Conflict Explanation
 
-I resolved the conflict by combining the required information from both branches and removing all conflict markers.
+A genuine content conflict occurred in `notes/analysis-notes.md` because both branches modified the same file.
 
-After resolving the conflict, I staged the file and successfully committed the merge.
+The main branch contained:
+- Total Sales: 224700
+- Total Profit: 36300
 
-## Git Commit History
+The feature branch changed the dataset formatting and did not contain these figures.
+
+The final merged version retained the feature branch formatting. The original sales figures were not retained.
+
+### Actual Conflict Evidence
+
+Command executed:
+
+```powershell
+git -C "$env:USERPROFILE\git-data-analysis-project-source" show --remerge-diff 18ca8c4 -- notes/analysis-notes.md
+```
+
+Actual terminal output:
 
 ```text
-*   18ca8c4 (HEAD -> main) merge: resolve conflict in sales analysis notes
-|\  
-| * 3137a0a (feature/monthly-sales-analysis) feat: add monthly sales analysis
+remerge CONFLICT (content): Merge conflict in notes/analysis-notes.md
+```
+
+The merge conflict was resolved and recorded in commit `18ca8c4`.
+
+## 9. Git Commit History
+
+Total commits: 9
+
+```text
+* b738d39 (HEAD -> main, origin/main, origin/HEAD) docs: improve sales analysis project README
+* f8c4671 docs: document merge conflict and git history
+*   18ca8c4 merge: resolve conflict in sales analysis notes
+|\
+| * 3137a0a (origin/feature/monthly-sales-analysis, feature/monthly-sales-analysis) feat: add monthly sales analysis notes
 * | f87495e docs: update analysis goals on main branch
-|/  
+|/
 * 21dc932 docs: add project overview and setup instructions
 * d9221f3 chore: add gitignore for unnecessary files
 * 548c501 docs: add initial sales analysis notes
 * eac987d data: add sample sales dataset
+```

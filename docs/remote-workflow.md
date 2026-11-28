@@ -146,3 +146,50 @@ This workflow helps developers collaborate, avoid overwriting each other's work,
 ## Conclusion
 
 Git and GitHub help developers manage code, synchronize local and remote repositories, and collaborate effectively on real-world projects.
+
+
+## 7. Pushing a Personal Data Analysis Project to GitHub
+
+Apart from the course assignment repository, I maintain a separate public GitHub repository for my Sales Data Analysis project.
+
+### Personal Repository Details
+
+**GitHub Repository:**
+
+https://github.com/Harshal-78/git-data-analysis-project
+
+**Local Repository:**
+
+```text
+C:\Users\Genius Computer\git-data-analysis-project-source
+```
+
+### Commands Executed
+
+```powershell
+git -C "$env:USERPROFILE\git-data-analysis-project-source" add README.md
+
+git -C "$env:USERPROFILE\git-data-analysis-project-source" commit -m "docs: improve sales analysis project README"
+
+git -C "$env:USERPROFILE\git-data-analysis-project-source" push origin main
+```
+
+### Commit Details
+
+- Commit ID: `b738d39`
+- Branch: `main`
+- Updated file: `README.md`
+- Changes: 75 insertions and 43 deletions
+
+### Actual Push Output
+
+```text
+To https://github.com/Harshal-78/git-data-analysis-project.git
+   f8c4671..b738d39  main -> main
+```
+
+### Explanation
+
+The push command successfully uploaded the updated README file from my local personal repository to GitHub.
+
+This demonstrates how to maintain a separate project repository, document project information, commit changes, and synchronize them with a remote GitHub repository.

@@ -28,7 +28,7 @@ I configured my global Git username and email using:
 
 ```powershell
 git config --global user.name "Harshal Mahajan"
-git config --global user.email "mahajanharshal083@gmail.com"
+git config --global user.email "harshalmahajanji143@gmail.com"
 ```
 
 I verified the global configuration using:
@@ -45,7 +45,7 @@ filter.lfs.smudge=git-lfs smudge -- %f
 filter.lfs.process=git-lfs filter-process
 filter.lfs.required=true
 user.name=Harshal Mahajan
-user.email=mahajanharshal083@gmail.com
+user.email = harshalmahajanji143@gmail.com
 ```
 
 The output confirms that my Git username and email are configured globally.
